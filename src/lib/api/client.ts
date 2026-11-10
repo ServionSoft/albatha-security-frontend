@@ -1,4 +1,4 @@
-const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:4000";
+const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "/backend";
 const TOKEN_KEY = "abre_crm_token_v1";
 
 export function getToken() {
