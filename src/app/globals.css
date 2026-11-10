@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  /* ABRE/Albatha premium theme tokens */
+  --primary: #651244;
+  --primary-dark: #4a0d32;
+  --secondary: #b75f32;
+  --cream: #fdf2e9;
+  --cream-muted: #f3e6dc;
+  --white: #ffffff;
+  --text: #282426;
+  --text-secondary: #6b6468;
+  --text-muted: #8a8386;
+  --border: #e7e1e4;
+  --success: #3d6b4f;
+  --danger: #8b2e3a;
+  --radius: 16px;
+  --radius-sm: 12px;
+  --radius-md: 14px;
+  --radius-full: 999px;
+}
+
+@theme inline {
+  /* Tailwind @theme variables (consumed by shadcn-like base styles) */
+  --color-background: var(--cream);
+  --color-foreground: var(--text);
+  --radius: var(--radius);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--cream);
+  color: var(--text);
+}
+
+/* Better default focus ring */
+:focus-visible {
+  outline: 2px solid rgba(101, 18, 68, 0.35);
+  outline-offset: 2px;
+}
